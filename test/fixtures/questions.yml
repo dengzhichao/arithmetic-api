@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  answer: 1
+  operator: MyString
+
+two:
+  title: MyString
+  answer: 1
+  operator: MyString
