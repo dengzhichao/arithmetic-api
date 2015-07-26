@@ -9,10 +9,11 @@
 
 require 'csv'
 
+# Clear database
 Distractor.destroy_all
 Question.destroy_all
 
-
+# Import Questions
 csv_text = File.read('./questions_table.csv')
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
@@ -20,7 +21,7 @@ csv.each do |row|
 end
 puts "questions imported"
 
-
+# Import distractors
 csv_text = File.read('./distractors_table.csv')
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
