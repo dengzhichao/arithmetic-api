@@ -17,20 +17,16 @@ ActiveRecord::Schema.define(version: 20150726154953) do
   enable_extension "plpgsql"
 
   create_table "distractors", force: :cascade do |t|
-    t.integer  "distractor"
-    t.integer  "question_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer "distractor"
+    t.integer "question_id"
   end
 
   add_index "distractors", ["question_id"], name: "index_distractors_on_question_id", using: :btree
 
   create_table "questions", force: :cascade do |t|
-    t.string   "title"
-    t.integer  "answer"
-    t.string   "operator"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string  "title"
+    t.integer "answer"
+    t.string  "operator"
   end
 
   add_foreign_key "distractors", "questions"

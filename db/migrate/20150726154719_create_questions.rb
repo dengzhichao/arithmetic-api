@@ -4,8 +4,6 @@ class CreateQuestions < ActiveRecord::Migration
       t.string :title
       t.integer :answer
       t.string :operator
-
-      t.timestamps null: false
     end
   end
 end
