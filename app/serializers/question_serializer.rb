@@ -1,5 +1,4 @@
 class QuestionSerializer < ActiveModel::Serializer
-  attributes :id, :title, :answer, :operator
-  # has_many :distractors
+  attributes :id, :first_operand, :operator, :second_operand, :answer
 
 end
