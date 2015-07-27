@@ -43,6 +43,6 @@ class DistractorsController < ApplicationController
   end
 
   def distractor_params
-    params.permit(:distractor)
+    params.require(:distractor).permit(:distractor)
   end
 end

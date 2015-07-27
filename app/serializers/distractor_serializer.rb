@@ -1,4 +1,4 @@
 class DistractorSerializer < ActiveModel::Serializer
-  attributes :distractor
+  attributes :id, :distractor
 
 end
