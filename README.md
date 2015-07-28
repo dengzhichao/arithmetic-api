@@ -21,3 +21,10 @@ This was built with a Rails API and PostgresQL database, and is consumed by an A
 ###### 8. User can add remove a distractor from a specific question
 ###### 9. User can change a distractor on a specific question
 ###### 10. User can create a new question with distractors
+
+### Data Structure
+
+###### Two Tables: Questions table and Distractors table
+1. Questions Table Columns: id (PK), first_operand, operator, second_operand, operator.
+2. Distractors Table Columns: id (PK), question_id (FK), distractor.
+
