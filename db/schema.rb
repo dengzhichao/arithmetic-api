@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20150726154953) do
   add_index "distractors", ["question_id"], name: "index_distractors_on_question_id", using: :btree
 
   create_table "questions", force: :cascade do |t|
-    t.string  "first_operand"
+    t.integer "first_operand"
     t.string  "operator"
-    t.string  "second_operand"
+    t.integer "second_operand"
     t.integer "answer"
   end
 
